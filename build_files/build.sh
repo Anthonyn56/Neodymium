@@ -21,10 +21,9 @@ dnf5 install -y niri
 
 dnf5 -y copr enable avengemedia/dms
 dnf5 -y install dms
-#systemctl --user add-wants niri.service dms
 dnf5 -y copr disable avengemedia/dms
 
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-systemctl --user add-wants niri.service dms
+#systemctl --user add-wants niri.service dms
