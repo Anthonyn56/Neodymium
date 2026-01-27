@@ -11,9 +11,8 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 # dnf5 install -y tmux
-# dnf5 install -y alacritty fuzzel niri
-dnf5 install -y --setopt=install_weak_deps=True niri
-
+dnf5 install -y --setopt=install_weak_deps=False niri
+dnf5 install khal
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
